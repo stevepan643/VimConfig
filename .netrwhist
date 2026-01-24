@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/steve/.config/vim/colors'
+let g:netrw_dirhist_5='/home/steve/.config/vim'
+let g:netrw_dirhist_4='/home/steve/Repos/GameEngine'
+let g:netrw_dirhist_3='/home/steve/Repos/vim-proj/plugin'
+let g:netrw_dirhist_2='/home/steve/.config/vim/plugged/vim-proj/plugin'
+let g:netrw_dirhist_1='/home/steve/.config/vim/colors'
+let g:netrw_dirhist_0='/home/steve/.config/vim'
+let g:netrw_dirhist_9='/home/steve/.config/vim/plugged'
+let g:netrw_dirhist_8='/home/steve/.config/vim/colors'
+let g:netrw_dirhist_7='/home/steve/.config/vim'

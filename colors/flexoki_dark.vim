@@ -184,6 +184,28 @@ call s:Hi('DiagnosticWarn',  {'fg': s:variants.dark.ye})
 call s:Hi('DiagnosticInfo',  {'fg': s:variants.dark.cy})
 call s:Hi('DiagnosticHint',  {'fg': s:variants.dark.bl})
 
-call s:Hi('Added',   {'fg': s:variants.dark.gr})
-call s:Hi('Removed', {'fg': s:variants.dark.re})
-call s:Hi('Changed', {'fg': s:variants.dark.or})
+" Git Gutter
+call s:Hi('GitGutterAdd',	{'fg': s:variants.dark.gr})
+call s:Hi('GitGutterChange',	{'fg': s:variants.dark.re})
+call s:Hi('GitGutterDelete',	{'fg': s:variants.dark.or})
+call s:Hi('SignColumn',		{'bg': s:variants.dark.bg})
+let g:gitgutter_set_sign_background = 1
+
+" Air Line
+
+let g:airline#themes#flexoki_dark#palette = {}
+
+let s:N1 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
+let s:N2 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
+let s:N3 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
+
+let g:airline#themes#flexoki_dark#palette.normal =
+      \ airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+
+let g:airline#themes#flexoki_dark#palette.insert =
+      \ airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+
+if exists('g:loaded_airline')
+  call airline#load_theme()
+endif
+

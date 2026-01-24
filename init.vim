@@ -1,10 +1,19 @@
 set runtimepath^=~/.config/vim
 
 set nocompatible
+filetype plugin on
+
+let g:vimspector_enable_mappings = 'HUMAN'
+
 
 call plug#begin()
 
 Plug 'sheerun/vim-polyglot'
+Plug 'airblade/vim-gitgutter'
+Plug 'vim-airline/vim-airline'
+Plug 'vimwiki/vimwiki'
+
+Plug 'puremourning/vimspector'
 
 call plug#end()
 
@@ -27,3 +36,15 @@ autocmd FileType * setlocal noexpandtab tabstop=8 shiftwidth=8 softtabstop=8
 " set showtabline=2
 
 runtime! ftplugin/man.vim
+
+set keywordprg=:Man
+
+function! RunClaude()
+	botright vertical terminal claude --model qwen3-coder-plus
+	vertical resize 65
+	wincmd h
+endfunction
+
+command! Claude call RunClaude()
+
+let g:airline#extensions#tabline#enabled = 1

@@ -193,19 +193,19 @@ let g:gitgutter_set_sign_background = 1
 
 " Air Line
 
-let g:airline#themes#flexoki_dark#palette = {}
-
-let s:N1 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
-let s:N2 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
-let s:N3 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
-
-let g:airline#themes#flexoki_dark#palette.normal =
-      \ airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-
-let g:airline#themes#flexoki_dark#palette.insert =
-      \ airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-
-if exists('g:loaded_airline')
-  call airline#load_theme()
-endif
+" let g:airline#themes#flexoki_dark#palette = {}
+" 
+" let s:N1 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
+" let s:N2 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
+" let s:N3 = [s:variants.dark.ui, s:variants.dark.bg, -1, -1]
+" 
+" let g:airline#themes#flexoki_dark#palette.normal =
+"       \ airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+" 
+" let g:airline#themes#flexoki_dark#palette.insert =
+"       \ airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+" 
+" if exists('g:loaded_airline')
+"   call airline#load_theme()
+" endif
 

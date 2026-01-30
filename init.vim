@@ -14,6 +14,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vimwiki/vimwiki'
 
 Plug 'puremourning/vimspector'
+Plug 'bujnlc8/vim-translator'
 
 call plug#end()
 
@@ -28,7 +29,7 @@ set tabstop=8
 set shiftwidth=8
 set softtabstop=8
 
-colorscheme flexoki_light
+colorscheme flexoki_dark
 
 autocmd FileType * setlocal noexpandtab tabstop=8 shiftwidth=8 softtabstop=8
 
@@ -48,3 +49,5 @@ endfunction
 command! Claude call RunClaude()
 
 let g:airline#extensions#tabline#enabled = 1
+let g:vimwiki_list = [{'path': '~/Documents/Obsidians',
+                      \ 'syntax': 'markdown', 'ext': '.md'}]
